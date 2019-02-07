@@ -1,0 +1,148 @@
+body{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	background-color:#f26126;
+	width:100%;
+	overflow-x:hidden;
+}
+
+#container{
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow-x:hidden;
+}
+
+#wrapper{
+	position:relative;
+	width:auto;
+	display:block;
+	margin-left:147px;
+	margin-right:auto;
+}
+
+#wrapper .top{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin-bottom:37px;
+}
+
+#wrapper .top video{
+	position:relative;
+	width:800px;
+	height:400px;
+	margin-left:-147px;
+}
+
+#wrapper .bottom{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin-bottom:100px;
+}
+
+#wrapper .bottom .left{
+	position:relative;
+	float:left;
+	width:350px;
+	height:216px;
+	background-size:350px auto;
+	background-image:url(../assets/description.png);
+	background-repeat: no-repeat;
+}
+
+#wrapper .bottom .right{
+	position:relative;
+	float:left;
+	width:242px;
+	height:289px;
+	margin-left:150px;
+	background-size:242px auto;
+	background-image:url(../assets/team.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1024px) {
+	#wrapper .bottom .left, #wrapper .bottom .right{
+		clear:both;
+		float:none;
+		margin-left:0px;
+	}
+
+	#wrapper .bottom .left{
+		margin-bottom:70px;
+	}
+
+	#wrapper .bottom .right{
+		width:350px;
+		height:418px;
+		background-size:350px auto;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	#wrapper{
+		margin-left:0px;
+	}
+
+	#wrapper .top{
+		margin-bottom:0px;
+	}
+
+	#wrapper .top video{
+		width:100%;
+		height:auto;
+		margin-left:0px;
+	}
+
+	#wrapper .bottom{
+		width:auto;
+		margin-left:18.5%;
+	}
+}
+
+@media only screen and (max-width: 590px) {
+	#wrapper{
+		width:350px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	#wrapper .bottom{
+		margin-left:0px;
+	}
+
+	#wrapper .top video{
+		width:590px;
+		margin-left:-32%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#wrapper{
+		width:77vw;
+	}
+
+	#wrapper .bottom .left{
+		width:77vw;
+		height:47.5vw;
+		background-size:100% auto;
+	}
+
+	#wrapper .bottom .right{
+		width:77vw;
+		height:92vw;
+		background-size:100% auto;
+	}
+
+	#wrapper .top video{
+		width:131vw;
+	}
+
+	body{
+		background-color:#EF5723;
+	}
+}
